@@ -9,7 +9,7 @@
 <body>
     <form id="form">
         <input type="text" id="input">
-        <button type="button" class="btn btn-primary">확인</button>
+        <button>확인</button>
     </form>
     <div id="logs"></div>
 
@@ -25,7 +25,7 @@
 
         const answer = [];
         for (let n=0; n<=3; n+=1) { // 4번 반복
-            // const index = Math.floor(Math.random()*9);  // 0~8 까지의 정수
+            // const index = Math.floor(Math.random()*(9-n));  // 0~8 까지의 정수
             const index = Math.floor(Math.random()*numbers.length); // numbers 길이에 따라
             answer.push(numbers[index]);
             numbers.splice(index, 1);
